@@ -5,7 +5,7 @@ WORKDIR /app
 
 # 安装依赖
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt -i http://pypi.magic.com/repository/pypi/simple --trusted-host pypi.magic.com
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 复制应用代码
 COPY . .
